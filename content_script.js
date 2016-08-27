@@ -7,9 +7,7 @@
 					return;
 				}
 				var datas=EXIF.getAllTags(this);
-				console.log(datas.Make);
 				chrome.runtime.sendMessage(datas,function(res){
-					alert(res);
 				});
 
 			});
